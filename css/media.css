@@ -1,0 +1,391 @@
+/* Ноутбук */
+@media (max-width: 1025px){
+    /* Что то надо сделать с фоном */
+    .container__base{
+        width: 100%;
+        padding: 0 19px;
+    }
+    .offer-slide__img{
+        width: 440px;
+    }
+}
+
+
+
+/* Планшет */
+@media(max-width: 813px){
+    body{
+        font-size: 16px;
+    }
+
+    .header{
+        height: 100%;
+        background: #F7D6E3;
+    }
+
+    /* Шапка */
+
+    .account{
+        display: none;
+    }
+
+    body.lock{
+        overflow: hidden;
+    }
+
+    .burger{
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 23px;
+    }
+
+    .burger__lines{
+        position: absolute;
+        background-color: #383838;
+        right: 0;
+        border-radius: 15px;
+        width: 100%;
+        height: 3px;
+        top: 10px;
+        transition: all 0.4s ease;
+    }
+
+    .burger:before,
+    .burger:after{
+        position: absolute;
+        content: '';
+        background-color: #383838;
+        border-radius: 15px;
+        width: 100%;
+        height: 3px;
+        right: 0;
+        transition: all 0.4s ease;
+    }
+
+    .burger:before{
+        top: 0;
+    }
+
+    .burger:after{
+        bottom: 0;
+    }
+
+    .burger.active:before{
+        transform:rotate(45deg);
+        top: 10px;
+    }
+
+    .burger.active:after{
+        transform:rotate(-45deg);
+        bottom:10px;
+    }
+
+    .burger.active span{
+        transform: scale(0);
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: -100%;
+        left: 0;
+        overflow: auto;
+        background-color: rgb(255, 153, 221, 0.9);
+        transition: all 0.4s ease;
+    }
+
+    .menu.active{
+        top: 0;
+    }
+
+    .menu__navigation{
+        display: block;
+        /* Изменить */
+        padding-top: 88px;
+    }
+
+    .menu__links{
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;   
+    }
+
+    /* Offer */
+    .offer{
+        margin-top: 5px;
+    }
+
+    .slider.container__base{
+        padding: 0;
+    }
+
+    .offer-slide__position{
+        flex-direction: column-reverse;
+    }
+
+    .number-slider,
+    .info,
+    .dots-slider,
+    .links{
+        display: none;
+    }
+
+    .button-slider{
+        display: block;
+        font-size: 25px;
+        color: #383838;
+        position: absolute;
+    }
+    .button-slider.left{
+        top: 23%;
+    }
+    .button-slider.right{
+        top: 23%;
+        right: 0;
+    }
+
+    .offer-slide__img{
+        width: 349.2px;
+        height: 362.875px;
+        margin: 0 auto;
+    }
+
+    .mini-device__background{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.1);
+        border-radius: 25px;
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        margin-top: 445px;
+    }
+
+    .offer-slide__offer {
+        margin: 30px 0;
+    }
+
+    .offer-line{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .offer-slide__title{
+        font-size: 42px;
+        padding-top: 60px;
+    }
+
+    .offer-slide__text{
+        margin-top: 20px;
+    }
+
+    .offer-slide__price{
+        margin: 0;
+        justify-content: center;
+        margin: 30px 0;
+    }
+
+    .offer-slide__not-discount{
+        font-size: 18px;
+    }
+
+    .offer-slide__discount{
+        font-size: 18px;
+    }
+
+    .offer-slide__button{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Section */
+
+    .section{
+        background: #fff;
+        position: relative;
+    }
+
+    .product__title{
+        font-size: 42px;
+        margin-top: 60px;
+    }
+
+    .product-line{
+        display: block;
+        margin: 30px auto;
+    }
+
+    .product__text{
+        margin: 0;
+    }
+
+    .product__card{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .card{
+        margin-top: 30px;
+    }
+
+    /* Section-2 About-me */
+
+    .about-me{
+        margin-top: 90px;
+    }
+
+    .about-me__section{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me__title{
+        font-size: 42px;
+        margin: 0;
+    }
+
+    .Viktoria{
+        display: none;
+    }
+
+    .about-me__Viktoria{
+        display: block;
+        width: 400px;
+    }
+
+    .about-me__line{
+        display: block;
+        margin: 30px 0;
+    }
+
+    /* Footer */
+
+    .footer{
+        margin-top: 90px;
+    }
+
+    .info.footer-info{
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer__logo{
+        display: block;
+    }
+}
+
+
+/* Телефон  */
+@media(max-width: 426px){
+    body{
+        font-size: 12px;
+    }
+
+    .about-me{
+        margin-top: 40px;
+    }
+
+    .offer-slide__img{
+        width: 250px;
+        height: 259px;
+    }
+
+    .mini-device__background{
+        margin-top: 355px;
+    }
+
+    .offer-line{
+        width: 100px;
+    }
+
+    .offer-slide__title{
+        font-size: 28px;
+        padding-top: 30px;
+    }
+
+    .offer-slide__text{
+        margin-top: 9px;
+    }
+
+    .offer-slide__not-discount{
+        font-size: 16px;
+    }
+
+    .offer-slide__discount{
+        font-size: 16px;
+    }
+
+    /* Section */
+    .product__title{
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .product-line{
+        width: 100px;
+        margin: 15px auto;
+    }
+    
+    .card{
+        width: 170px;
+        height: 170px;
+        margin-top: 15px;
+    }
+
+    .card__position-text{
+        font-size: 20px;
+    }
+
+    .card__position-img{
+        width: 160px;
+    }
+    /* Section-2 about-me */
+    .about-me__title{
+        font-size: 28px;
+    }
+
+    .about-me__line{
+        width: 100px;
+        margin: 15px auto;
+    }
+
+    .about-me__Viktoria{
+        width: 230px;
+    }
+
+    .about-me__text{
+        padding-top: 15px;
+    }
+
+    /* Footer */
+
+    .footer{
+        margin-top: 40px;
+    }
+
+    .footer-text{
+        display: block;
+        padding: 19px;
+    }
+    .logo.footer-info{
+        margin-top: 19px;
+    }
+    .info.footer-info{
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .info.footer-info .info__tel{
+        margin-left: 10px;
+    }
+    .connection__title{
+        display:none;
+    }
+
+}
